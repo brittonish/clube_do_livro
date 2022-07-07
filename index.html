@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clube do livro</title>
+</head>
+<body>
+    <header>
+        <h1>Club do livro</h1>
+    </header>
+    <main>
+        <div class="box">          
+                <h2>Se inscreva para o nosso próximo encontro</h2>
+                <fieldset>
+            <legend>Formulário de inscrição</legend>
+            <form action="redirect.html" method="post">
+                <div>
+                    <label for="name"></label>
+                    <input type="text" name="name" placeholder="Nome" maxlength="20" minlength="10" required class="input">
+                </div>
+                <div>
+                    <label for="whasapp"></label>
+                    <input type="tel" name="whatsapp" placeholder="WhatsApp" minlength="8" class="input">
+                </div>
+                <div>
+                    <label for="email"></label>
+                    <input type="email" name="email" placeholder="Email" required class="input">
+                </div>
+                <div class="box">
+                    <label for="">Aniversário:</label>
+                    <input type="date" name="date" id="date">
+                </div>
+                <div class="box">
+                    <span>Gênero:</span>
+                    <div class="genderBox">
+                        <label for="gender">Masculino</label>
+                        <input type="radio" id="masculino" value="m">
+                        <label for="gender">Feminino</label>
+                        <input type="radio" id="feminino" value="f">
+                        <label for="gender">Não-binário</label>
+                        <input type="radio" id="non-binary" value="nb">
+                    </div>
+                </div>
+                <div class="box">
+                    <span>Gêneros literários favoritos:</span>
+                    <div class="optionBox">
+                        <div>
+                            <label for="adventure">Aventura</label>
+                            <input type="checkbox" id="adv" value="adv">
+                        </div>
+                        <div>
+                            <label for="biography">Biografia</label>
+                            <input type="checkbox" id="bio" value="bio">
+                        </div>
+                        <div>
+                            <label for="classic">Clássico</label>
+                            <input type="checkbox" id="class" value="class">
+                        </div>
+                        <div>
+                            <label for="comedy">Comédia</label>
+                            <input type="checkbox" id="com" value="com">
+                        </div>
+                        <div>
+                            <label for="fantasy">Fantasia</label>
+                            <input type="checkbox" id="fan" value="fan">
+                        </div>
+                        <div>
+                            <label for="sci-fi">Ficção Científica</label>
+                            <input type="checkbox" id="sf" value="sf">
+                        </div>
+                        <div>
+                            <label for="comics">História em Quadrinhos</label>
+                            <input type="checkbox" id="comic" value="comic">
+                        </div>
+                        <div>
+                            <label for="romance">Romance</label>
+                            <input type="checkbox" id="rom" value="rom">
+                        </div>
+                        <div>
+                            <label for="horror">Terror</label>
+                            <input type="checkbox" id="hr" value="hr">
+                        </div>
+                        <div>
+                            <label for="erotic">Erótico</label>
+                            <input type="checkbox" id="er" value="er">
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <label for="">Horário de preferência para os encontros:</label>
+                    <select name="" id="">
+                        <option value="none"></option>
+                        <option value="morning">Manhã</option>
+                        <option value="afternoon">Tarde</option>
+                        <option value="evening">Noite</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <textarea name="about" id="about" cols="40" rows="5" placeholder="Se apresente para o Club do Livro" class="input"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Cadastrar" id="submit" class="input">
+                </div>
+            </form>
+                </fieldset>
+        </div>
+    </main>
+    <footer></footer>
+    
+</body>
+</html>
